@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+    background-color: #0a0a0a;
+    color: #d4d4d4;
+    font-family: 'JetBrains Mono', monospace;
+    overflow-x: hidden;
+}
+
+.text-highlight { color: #3b82f6; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Page Load Animation */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card Styling */
+.skill-card, .affiliate-card {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.skill-card:hover {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.05);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px -12px rgba(59, 130, 246, 0.3);
+}
+
+.skill-card:active { transform: scale(0.98); }
+
+.affiliate-card h4 { font-size: 0.9rem; }
+.affiliate-card:hover { border-color: #52525b; transform: translateY(-3px); }
+
+/* Profile Image FX */
+.grayscale { filter: grayscale(100%); }
+.grayscale:hover { filter: grayscale(0%); }
+
+/* Blinking Terminal Cursor */
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 18px;
+    background-color: #3b82f6;
+    margin-left: 4px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ... keep previous CSS ... */
+
+.cta-anchor button {
+    box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+}
+
+.cta-anchor button:hover {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
+    transform: translateY(-2px);
+    border-color: #3b82f6;
+}
+
+.cta-anchor:active button {
+    transform: translateY(1px);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+
+/* Core Styling */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Effects for Documentation Look */
+.glow-border {
+    box-shadow: 0 0 30px rgba(38, 29, 172, 0.05);
+}
+
+.benefit-card {
+    background: rgba(19, 32, 174, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    border-color: #2256c5;
+    background: rgba(81, 42, 222, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Typography resets */
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
